@@ -12,8 +12,8 @@
 }
 
 .image-box {
-    width: 96%;
-    height: 96%;
+    width: 965px;
+    height: 165px;
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-    width: 60%;
+    width: 1000px;
     margin: 30px auto;
     position: relative;
 }
@@ -99,6 +99,7 @@ nav li {
 
 nav li:hover {
     background-color: #302b27;
+    cursor: pointer;
 }
 
 aside {
