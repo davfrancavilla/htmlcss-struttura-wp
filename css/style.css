@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana;
+    font-family: Arial;
 }
 
 .clearfix::after{
@@ -86,9 +86,10 @@ nav {
     border-radius: 0 0 3px 3px;
     text-align: center;
     line-height: 30px;
+    overflow: scroll;
 }
 
-li {
+nav li {
     margin-left: 10px;
     display: inline-block;
     font-size: 32px;
@@ -96,7 +97,7 @@ li {
     padding: 10px;
 }
 
-li:hover {
+nav li:hover {
     background-color: #302b27;
 }
 
@@ -113,7 +114,7 @@ aside {
 main {
     width: 58%;
     height: 400px;
-    background-color: violet;
+    background-color: white;
     float: left;
 }
 
@@ -123,8 +124,10 @@ main {
 
 .sidebox {
     width: 100%;
-    background-color: pink;
+    background-color: white;
     margin-bottom: 5%;
+    position: relative;
+    overflow: auto;
 }
 
 .small {
@@ -135,9 +138,25 @@ main {
     height: 300px;
 }
 
+.sidebox ul {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    list-style: none;
+    line-height: 30px;
+    color: #9c3;
+}
+
+.list-title {
+    font-weight: lighter;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
 footer {
     margin-top: 1%;
     height: 100px;
     width: 100%;
-    background-color: lightblue;
+    background-color: white;
 }
